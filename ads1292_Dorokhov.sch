@@ -3593,14 +3593,10 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="U$1" gate="G$1" pin="RESP_MODN/IN3N"/>
 <wire x1="101.6" y1="93.98" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<pinref part="U$1" gate="G$1" pin="RLDIN/RLDREF"/>
 <wire x1="101.6" y1="96.52" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="93.98" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
 <junction x="101.6" y="96.52"/>
 <wire x1="104.14" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="93.98" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<junction x="104.14" y="96.52"/>
 </segment>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
@@ -4091,18 +4087,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-27.94" y1="58.42" x2="-27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="RLDOUT"/>
-<pinref part="U$1" gate="G$1" pin="RLDINV"/>
-<wire x1="111.76" y1="99.06" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="99.06" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
-<junction x="106.68" y="99.06"/>
-</segment>
-</net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
@@ -4261,6 +4245,22 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="68.58" y="99.06"/>
 <wire x1="40.64" y1="81.28" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
 <junction x="40.64" y="99.06"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RLDIN/RLDREF"/>
+<pinref part="U$1" gate="G$1" pin="RLDOUT"/>
+<pinref part="U$1" gate="G$1" pin="RLDINV"/>
+<wire x1="111.76" y1="99.06" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="99.06" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<junction x="106.68" y="99.06"/>
+<wire x1="109.22" y1="93.98" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<junction x="109.22" y="99.06"/>
 </segment>
 </net>
 </nets>
